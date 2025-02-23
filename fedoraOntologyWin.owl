@@ -1,0 +1,358 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5">
+        <rdfs:label xml:lang="en">Cannot Create Memento</rdfs:label>
+        <rdfs:label xml:lang="en">Cannot Create Resource</rdfs:label>
+        <rdfs:label xml:lang="en">Constraint Violation Exception</rdfs:label>
+        <rdfs:label xml:lang="en">External Message Body Constraint</rdfs:label>
+        <rdfs:label xml:lang="en">Incorrect Triple Subject Exception</rdfs:label>
+        <rdfs:label xml:lang="en">Interaction Model Violation Exception</rdfs:label>
+        <rdfs:label xml:lang="en">Invalid ACL Exception</rdfs:label>
+        <rdfs:label xml:lang="en">Invalid Memento Path Exception</rdfs:label>
+        <rdfs:label xml:lang="en">Malformed RDF Exception</rdfs:label>
+        <rdfs:label xml:lang="en">Out Of Domain Subject Exception</rdfs:label>
+        <rdfs:label xml:lang="en">Server Managed Property Exception</rdfs:label>
+        <rdfs:label xml:lang="en">Server Managed Type Exception</rdfs:label>
+        <rdfs:comment xml:lang="en">
+          Fedora cannot handle versioning requests with a malformed memento ID.
+          Memento ID is system generated, which is a timestamp in yyyyMMddHHmmss format.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">Certain repository types can only be modified by the repository.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fedora is unable to create the requested memento. Fedora does
+        not support creating a memento with a Memento-Datetime header.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">Fedora is unable to create the requested resource.  Fedora will
+          not create a resource of type LDP Resource.  The type specified must be a subclass of
+          LDP Resource.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">Fedora wasn&apos;t able to create the LDPR with the specified LDP-RS as the ACL for one of the following reasons:
+        the ACL URI in the link header does not exist, the ACL URI exists but does not contain a triple indicating rdf:type of http://fedora.info/definitions/v4/webac#Acl, or the ACL URI does not have the same domain as the LDPR.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">Part of the request for creating/updating an External Message Body was missing
+            or malformed. Link header must include a URI reference to an external resource from an allowed path;
+            a link relation type (&apos;rel&apos;) that is set to &quot;http://fedora.info/definitions/fcrepo#ExternalContent&quot;;
+            a &apos;handling&apos; attribute set to one of the following three values: proxy, redirect, or copy;
+            and an optional &apos;type&apos; attribute representing the content type of the external body.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">The RDF attempted to alter a property in the &lt;http://fedora.info/definitions/v4/repository#&gt; namespace. 
+        These are system managed properties.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The RDF contained one or more triples where the subject was not contained inside
+        the Fedora Repository. Fedora does not maintain RDF content about resources not contained within it.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The RDF contained one or more triples where the subject was not contained inside
+        the resource being updated or created. RDF in Fedora is always an expression of the properties of a given
+        resource.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The RDF violated Fedora&apos;s internal constraints to change the interaction model.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The RDF was incorrectly formed.  The response body from the failing request
+        should offer useful information regarding the failure.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The request violated one of Fedora&apos;s internal constraints. Unfortunately we could not accurately determine which one.</rdfs:comment>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/CannotCreateMementoException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/CannotCreateResourceWithAclException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/ConstraintNotImplementedException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/ConstraintViolationException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/ExternalMessageBodyException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/IncorrectTripleSubjectException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/InteractionModelViolationException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/InvalidACLException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/InvalidMementoPathException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/MalformedRdfException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/OutOfDomainSubjectException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/ServerManagedPropertyException"/>
+        <owl:imports rdf:resource="file:/home/makdadmohamedyassine/Downloads/fcrepo-webapp-6.4.0/static/constraints/static/constraints/ServerManagedTypeException"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="&rdfs;comment">
+        <rdfs:isDefinedBy rdf:datatype="&xsd;Name"></rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&rdfs;comment"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <rdf:Description rdf:about="&rdfs;isDefinedBy">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+        <rdfs:range rdf:resource="&xsd;Name"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="&rdfs;label">
+        <rdfs:label>NEW VERSION</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#NewThing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#backwardCompatibleWith -->
+
+    <rdf:Description rdf:about="&owl;backwardCompatibleWith">
+        <owl:priorVersion rdf:datatype="&xsd;anyURI">&lt;lyrasis&gt; LYRASIS &lt;\lyrasis&gt;</owl:priorVersion>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#incompatibleWith -->
+
+    <rdf:Description rdf:about="&owl;incompatibleWith">
+        <rdfs:subPropertyOf rdf:resource="&owl;incompatibleWith"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#OWLObjectProperty_6cc758d1_bbff_464b_b688_33924ed4e7ba -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#OWLObjectProperty_6cc758d1_bbff_464b_b688_33924ed4e7ba">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:isDefinedBy xml:lang="en">PrefixedName</rdfs:isDefinedBy>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Thing]_URN88e3e812_3fbb_4ac0_aa7a_dc82148d3830Trough"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#ThingF -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#ThingF">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:isDefinedBy></rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#ThingF"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[InferedBy]_URN99e5a1b1_d19b_488c_b295_638f3c1f148dintoOnto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[InferedBy]_URN99e5a1b1_d19b_488c_b295_638f3c1f148dintoOnto">
+        <rdfs:label xml:lang="fr">DataIS</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Thing]_URN65765d9a_94de_43f2_bfef_7dab64a9eeaeTrough"/>
+        <rdfs:seeAlso rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Nothing"/>
+        <owl:propertyDisjointWith rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="&owl;topDataProperty">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[InferedBy]_URN99e5a1b1_d19b_488c_b295_638f3c1f148dintoOnto"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#NewThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#NewThing">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topObjectProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#NewThing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="&owl;Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[InferedBy]_URN02709b60_822d_447d_bf41_5649e307b03bintoOnto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[InferedBy]_URN02709b60_822d_447d_bf41_5649e307b03bintoOnto">
+        <rdfs:label xml:lang="fr">InferedBy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Subject]_URN881bd07e_3747_4509_8f56_7e451929e264federated"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Subject]_URN881bd07e_3747_4509_8f56_7e451929e264federated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Subject]_URN881bd07e_3747_4509_8f56_7e451929e264federated">
+        <rdfs:label xml:lang="fr">Subject</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Thing]_URN65765d9a_94de_43f2_bfef_7dab64a9eeaeTrough -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Thing]_URN65765d9a_94de_43f2_bfef_7dab64a9eeaeTrough">
+        <rdfs:label xml:lang="fr">DOMOrigin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#NewThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Thing]_URN88e3e812_3fbb_4ac0_aa7a_dc82148d3830Trough -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#[Thing]_URN88e3e812_3fbb_4ac0_aa7a_dc82148d3830Trough">
+        <rdfs:label xml:lang="fr">DOMextension</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#fedoraThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#fedoraThing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#fedoraThing">
+        <rdfs:label></rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+    <rdf:Description rdf:about="&owl;Nothing"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="&owl;Thing">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#OWLObjectProperty_6cc758d1_bbff_464b_b688_33924ed4e7ba"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#OWLNamedIndividual_ec735cba_4a5d_4cdf_81ab_c7594bb5e347 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#OWLNamedIndividual_ec735cba_4a5d_4cdf_81ab_c7594bb5e347">
+        <rdf:type rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#NewThing"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#NewThing"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:topDataProperty rdf:datatype="&xsd;boolean">true</owl:topDataProperty>
+        <rdfs:isDefinedBy xml:lang="en">BY_NAME</rdfs:isDefinedBy>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#reprise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#reprise -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#reprise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#fedoraThing"/>
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#ThingF"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#fedoraThing"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:topDataProperty xml:lang="en">BY_NAME</owl:topDataProperty>
+    </owl:Thing>
+    <rdf:Description>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&owl;topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/makdadmohamedyassine/ontologies/2025/1/untitled-ontology-5#NewThing"/>
+            </owl:Restriction>
+        </rdf:type>
+        <owl:topDataProperty>geek bar</owl:topDataProperty>
+    </rdf:Description>
+    <rdf:Description>
+        <owl:topDataProperty>FREEDOM</owl:topDataProperty>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&owl;versionInfo">
+        <owl:backwardCompatibleWith>FEDORA COMMONS</owl:backwardCompatibleWith>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
